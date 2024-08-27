@@ -7,11 +7,22 @@ import { PersonaComponent } from "../persona/persona.component";
     standalone: true,
     imports: [RouterOutlet, PersonaComponent],
     templateUrl: './personas.component.html',
+    styleUrls:['./personas.component.css']
 })
 
 export class PersonasComponent {
-    title2 = 'primerAppxxxxxxxxxxxxx';
-    salud2 = 'Hablame desde personas';
+     deshabilitar = false;
+     mensaje = 'Sin Persona'
+     titulo= ''
+
+     agregarPersona(){
+        this.mensaje  = 'persona agregada'
+     }
+
+     modificarTitulo(event: Event){
+        this.titulo = (<HTMLInputElement>event.target).value;
+     }
   }
   
+
  

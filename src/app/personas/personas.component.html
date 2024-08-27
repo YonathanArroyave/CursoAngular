@@ -1,2 +1,15 @@
-<h1>Listado personas</h1>
-<app-persona></app-persona>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Listado personas//desde pernasComponet</h1>
+            <button class="btn btn-primary" [disabled]="deshabilitar" (click)="agregarPersona()">Agregar Persona</button>
+            <p>{{mensaje}} </p>
+            <app-persona></app-persona>
+
+            <label>Titulo Persona</label>
+            <input type="text" class="from-control" (input)="modificarTitulo($event)"> 
+            {{ titulo }}
+           
+        </div>
+    </div>
+</div>
