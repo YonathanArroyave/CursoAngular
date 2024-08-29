@@ -12,7 +12,7 @@ export class PersonaComponent {
     nombre: string = 'Yonathan';
     apellido: string = 'Arroyave';
     edad:number = 28;
-  
+    
 
 
 /*Asi se envia un elemento privado
